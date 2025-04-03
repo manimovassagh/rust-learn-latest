@@ -1,4 +1,6 @@
 fn main() {
+    // This is a simple Rust program that prints a greeting message
+    // and performs a basic arithmetic operation.
     let name = "Rustacean";
     let age = 3;
 
