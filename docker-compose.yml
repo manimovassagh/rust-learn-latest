@@ -4,3 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: rust-app
+    healthcheck:
+      test: ["CMD", "ps", "aux", "|", "grep", "rust-learn"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
